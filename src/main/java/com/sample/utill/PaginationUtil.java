@@ -38,6 +38,15 @@ public class PaginationUtil {
     @ApiModelProperty(value = "Controller Name", notes = "Controller Name can not be Null")
     private String controllerName;*/
 
+    @Override
+    public String toString() {
+        return "PaginationUtil{" +
+                "currentPage=" + currentPage +
+                ", itemsPerPages=" + itemsPerPages +
+                ", sortBy='" + sortBy + '\'' +
+                ", direction='" + direction + '\'' +
+                '}';
+    }
 
     public Integer getCurrentPage() {
         return currentPage;
