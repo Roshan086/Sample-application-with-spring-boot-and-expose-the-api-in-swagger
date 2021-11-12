@@ -11,10 +11,7 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * @author Raza Muhammad Dahri on 16/1/2020
- * @project Reinsurance
- */
+
 public class Utility {
 
     public static Integer getDifferenceBetweenDate(Timestamp firstLoginTime, Timestamp currentServerTime) {
