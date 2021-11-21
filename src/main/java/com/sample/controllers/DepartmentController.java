@@ -29,7 +29,7 @@ public class DepartmentController {
 
     //creating Post mapping that get the list of departments from the database
     @PostMapping("getAllDepartments")
-    public PageDTO getAll(@RequestBody PaginationUtil paginationUtil){
+    public PageDTO getAll(@ModelAttribute PaginationUtil paginationUtil){
         Map<String, String> params=new HashMap<>();
         System.out.println(paginationUtil.toString());
         params.put("page",paginationUtil.getCurrentPage().toString());
